@@ -19,9 +19,11 @@ const App = () => {
 
   return (
     <div className="container mx-auto flex flex-col justify-between items-center min-h-screen">
-      <Navbar setNotes={setNotes} notes={data} />
-      <Input setNotes={setNotes} />
-      <NoteList notes={notes} setNotes={setNotes} />
+      <Navbar />
+      <div className="flex gap-12 h-[80vh] w-full">
+        <Input setNotes={setNotes} />
+        <NoteList notes={notes} setNotes={setNotes} />
+      </div>
       <Footer />
     </div>
   );

@@ -59,7 +59,7 @@ const Input = ({ setNotes }: Props) => {
   };
 
   return (
-    <div className="flex flex-col space-y-4 my-4 w-1/3">
+    <div className="flex-col space-y-4 my-6 w-1/3">
       <h1 className="text-xl font-bold tracking-wider">Create Note</h1>
       <form
         className="space-y-4 border border-slate-600 rounded-md p-2 shadow-md"
